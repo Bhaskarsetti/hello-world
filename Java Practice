@@ -1,0 +1,41 @@
+package TrailJavaPractice;
+import java.util.*;
+
+ public class Practice1 {
+	 final static Integer Mobile = 9885; 
+	 // uniq data and not modify
+	 //static is a universl acces
+	/* abstract void Call() {
+		 abstract float area();
+	 }
+	*/
+	public void Hello() {
+		// Mobile = 9558; con't change due it was final fixed value
+		
+		System.out.println("Welcome to the JAVA");
+	}
+	public static void Start() {
+		
+		System.out.println("Start your Practice Here");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Scanning User Dats here
+		Scanner obj = new Scanner (System.in);
+		System.out.println("Enter your Name");
+		String Name = obj.nextLine();
+		System.out.println("Hello  "+Name);
+		System.out.println("Your Mobile number is  "+Mobile);
+		// Calling class for Methods
+		Practice1 main = new Practice1();
+		
+		//Void Method 
+		main.Hello();
+		
+		//Static Method
+		Start();
+
+	}
+
+}
